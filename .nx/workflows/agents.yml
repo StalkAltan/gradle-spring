@@ -1,0 +1,13 @@
+launch-templates:
+  linux-medium-java:
+    resourceClass: 'docker_linux_amd64/medium'
+    image: 'ubuntu22.04-node20.11-v3'
+    env:
+      MY_ENV_VAR: shared
+    init-steps:
+      - name: Checkout
+        uses: 'nrwl/nx-cloud-workflows/v3.6/workflow-steps/checkout/main.yaml'
+      - name: Install Node Modules
+        script: ./nx --version
+      - name: Recursive ls
+        script: ls -R .nx
