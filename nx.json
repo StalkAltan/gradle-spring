@@ -31,5 +31,7 @@
         "buildTargetName": "build"
       }
     }
-  ]
+  ],
+  "nxCloudAccessToken": "N2U3NTg4ZmMtOTgxZS00ZGFiLThkMTgtZmE1YTA4NjUyYmNifHJlYWQtd3JpdGU=",
+  "nxCloudUrl": "https://staging.nx.app"
 }
